@@ -10,7 +10,7 @@ import { HttpService } from 'src/app/services/http.service';
 })
 export class HomeComponent implements OnInit {
   public sort: string | undefined;
-  public games: Array<Game> | undefined;
+  public games: Array<Game> = [];
 
   constructor(
     private httpService: HttpService,
