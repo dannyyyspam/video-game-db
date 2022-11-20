@@ -1,0 +1,36 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select panelClass="sort-select" [(ngModel)]="sort">
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Updated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="-metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="games">
+  <div class="game">
+    <div class="game-thumb-container">
+      <img
+        src="https://th.bing.com/th/id/R.ff2157dee0becfe16526f572eb61ea93?rik=nMM0DA%2fPg0Ji4Q&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1809626.jpg&ehk=rXNyXCC2bnEsSdbG8QQezRbVMFvUA6JkDV622U00H5M%3d&risl=&pid=ImgRaw&r=0"
+        alt="thumbnail"
+        class="game-thumbnail"
+      />
+    </div>
+    <div class="game-description">
+      <p class="game-name">Name</p>
+      <div class="game-platforms">
+        <img
+          class="game-platform"
+          src="https://www.transparentpng.com/thumb/playstation/UpLbhn-playstation-clipart-logo-photos.png"
+          alt="slug"
+        />
+      </div>
+    </div>
+  </div>
+</div>
