@@ -12,6 +12,7 @@ export interface Game {
   rating: Array<Rating>;
   screenshots: Array<Screenshots>;
   trailers: Array<Trailer>;
+  id: string;
 }
 
 export interface APIResponse<T> {
